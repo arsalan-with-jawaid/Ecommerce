@@ -1,0 +1,114 @@
+/* Tailwind CSS (if you use it) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Inter', sans-serif; /* You can replace 'Inter' with your preferred font */
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark grey text for readability */
+  line-height: 1.6; /* Proper line spacing */
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Links Styling */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color */
+}
+
+a:hover {
+  color: #0070f3; /* Next.js blue hover color */
+  transition: color 0.3s ease;
+}
+
+/* Main Wrapper (for Layout) */
+main {
+  flex: 1; /* Make main content grow to fill available space */
+}
+
+/* Buttons Styling */
+button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1f2937; /* Dark gray background */
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Header ka CSS */
+header.navbar {
+  background-color: #ffffff; /* White background */
+  border-bottom: 1px solid #e0e0e0; /* Light grey border */
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header .logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+header .nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+header .nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+  color: #0070f3; /* Next.js blue */
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  header .nav-links {
+    display: none; /* Navbar links hide ho jayein choti screens pe */
+  }
+
+  header .logo h1 {
+    font-size: 1.2rem;
+  }
+}
+
+
